@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="true" >
+
+    <test name="D:/Luma_Project/src/test/java/TestClass/TastCase.java">
+        <classes>
+            <class name="TestClass.TastCase">
+            <methods>
+                <include name="RegistrationAndLogin"/>
+                <include name="CreateAccount"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+</suite>
