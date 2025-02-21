@@ -47,7 +47,7 @@ public class CreateNewCustomerAccount {
     }
 
     public void enteremail() {
-        emailaddress.sendKeys("Ruottrh87495@gamil.com");
+        emailaddress.sendKeys("Ruottrtah867495@gamil.com");
 
     }
 

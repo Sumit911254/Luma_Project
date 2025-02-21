@@ -3,12 +3,15 @@ package TestClass;
 import PageClass.*;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 public class TastCase extends BaseClass {
 
     @Test(enabled = false)
     public void RegistrationAndLogin() {
 
         IndexPage ip = new IndexPage(driver);
+
         ip.sinin();
       //  ip.clickaccount();
 
@@ -26,6 +29,7 @@ public class TastCase extends BaseClass {
     @Test
     public void CreateAccount() {
         IndexPage ip = new IndexPage(driver);
+
        // ip.sinin();
         ip.createacc();
      //  ip.clickaccount();

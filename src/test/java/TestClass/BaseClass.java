@@ -21,14 +21,14 @@ public class BaseClass {
     @BeforeClass
     public void setup() {
 
-        String browser = "msedge";
+        String browser = "chrome";
 
         switch (browser.toLowerCase()) {
 
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
-                driver.manage().window().maximize();
+               // driver.manage().window().maximize();
                 break;
 
             case "msedge":
@@ -47,7 +47,7 @@ public class BaseClass {
                 break;
         }
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
         driver.get(url);
     }
